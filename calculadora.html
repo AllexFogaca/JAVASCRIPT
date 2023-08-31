@@ -1,0 +1,45 @@
+<html>
+<body>
+    <script>
+        //numero inicial
+        //operador
+        //numero final
+
+        var num1 = prompt('numero inicial');
+
+        var sinal = prompt('operador');
+
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*' && sinal != '%' && sinal != 'v'){
+            alert("Operador invalido");
+                sinal = prompt("operador");
+        }
+
+        var num2 = prompt ('Numero final');
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        var resultadofinal = 0;
+
+        if(sinal == '+'){
+            resultadofinal = num1 + num2;
+        }else if(sinal == '-'){
+            resultadofinal = num1 - num2;
+        }else if(sinal == '/'){
+            resultadofinal = num1 / num2;
+        }else if(sinal == '*'){
+            resultadofinal = num1 * num2;
+        }else if(sinal == '%'){
+            resultadofinal = num1 / 100 * num2;
+        }else if(sinal == 'v'){
+            resultadofinal = Math.sqrt(num1);
+        }
+
+        alert('O resultado final é: '+ resultadofinal);
+
+
+        
+        
+    </script>
+</body>
+</html>
